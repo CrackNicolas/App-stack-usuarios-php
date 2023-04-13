@@ -1,0 +1,94 @@
+:root{
+    --color-text-primary : #0000ff;
+    --color-text-secondary : #ff0000;
+    --color-font-primary : #000000;
+}
+body{
+    overflow-x: hidden;
+    background-image: url("../images/fondo.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    letter-spacing: 1px;
+}
+html,body{
+    width: 100%;
+    overflow-x: hidden;
+}
+body::-webkit-scrollbar{
+    background-image: url("../images/fondo.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 9px;
+}
+body::-webkit-scrollbar-thumb{
+    background-color: var(--color-text-primary);
+    border-radius: 30px;
+}
+.menu-administrator{
+    position: fixed;
+    width: 100%;
+    display: flex;
+    z-index: 30;
+    align-items: center;
+    justify-content: space-between;
+    padding: 7px 20px 5px 20px;
+    border-bottom: 0.1px solid var(--color-text-primary);
+}
+.menu-administrator a:nth-child(1){
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--color-text-primary);
+    text-decoration: none;
+}
+.menu-administrator a:nth-child(1):hover{
+    cursor: pointer;
+    opacity: 0.8;
+}
+.menu-administrator a:nth-child(1) span{
+    font-size: 22px;
+    font-weight: bold;
+}
+.menu-administrator a:nth-child(1) ion-icon{
+    width: 20px;
+    height: 20px;
+}
+.questions .question{
+    font-size: 20px;
+}
+.questions .options{
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+.questions .info{
+    margin-top: -10px;
+    font-size: 13px;
+}
+.questions .next, .questions .end{
+    margin-top: 17px;
+    background-color: var(--color-text-primary);
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 7px 13px 5.5px 18px;
+    border: none;
+    border-radius: 5px;
+}
+.questions .next span{
+    margin-top: -3.5px;
+}
+.questions .end span, .questions .end ion-icon{
+    margin-top: -2px;
+}
+.questions .next:hover, .questions .end:hover{
+    cursor: pointer;
+    opacity: 0.7;
+}
+.response{
+    border-radius: 10px;
+}

@@ -1,0 +1,267 @@
+:root{
+    --color-text-primary : #0000ff;
+    --color-text-secondary : #ff0000;
+    --color-font-primary : #000000;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    overflow-x: hidden;
+    background-image: url("../images/fondo.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+body::-webkit-scrollbar{
+    background-image: url("../images/fondo.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 9px;
+}
+body::-webkit-scrollbar-thumb{
+    background-color: var(--color-text-primary);
+    border-radius: 30px;
+}
+/**---------Login----------**/
+.form .header{
+    border-radius: 5px;
+}
+.form .header p{
+    margin-bottom: 0px;
+}
+.form button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:5px;
+}
+.form button ion-icon{
+    width: 20px;
+    height: 20px;
+}
+.form button span{
+    font-size: 15px;
+}
+.form .header ion-icon{
+    width: 80px;
+    height: 80px;
+}
+/**-------------------------**/
+/**----Generar password-----**/
+#Generar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/**-------------------------**/
+/**----Registrar usuarios----**/
+.menu-administrator{
+    position: fixed;
+    width: 100%;
+    z-index: 30;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 7px 20px 5px 20px;
+    border-bottom: 0.1px solid var(--color-text-primary);
+}
+.menu-administrator a:nth-child(1){
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--color-text-primary);
+    text-decoration: none;
+}
+.menu-administrator a:nth-child(1):hover{
+    cursor: pointer;
+    opacity: 0.8;
+}
+.menu-administrator a:nth-child(1) span{
+    font-size: 22px;
+    font-weight: bold;
+}
+.menu-administrator a:nth-child(1) ion-icon{
+    width: 20px;
+    height: 20px;
+}
+.menu-administrator a:nth-child(2){
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.menu-administrator a:nth-child(2) ion-icon{
+    width: 20px;
+    height: 20px;
+    padding: 7px;
+    border-radius: 50%;
+}
+.menu-administrator a:nth-child(2) ion-icon:hover{
+    cursor: pointer;
+    box-shadow: 0 0 14px 0.1px var(--color-text-primary);
+}
+.form .message_error{
+    color: var(--color-text-secondary);
+}
+.form .message_end{
+    color: var(--color-text-primary);
+}
+/**-------------------------**/
+/**----------Search---------**/
+.card-user{
+    padding-top: 10px;
+    border-radius: 5px;
+    background-color: var(--color-font-primary);
+    color: var(--color-text-primary);
+    border: 1px solid var(--color-text-primary);
+    display: block;
+}
+.card-user .logo-users{
+    border-radius: 50%;
+    padding: 10px;
+    height: 100px;
+    width: 100px;
+    border: 1px solid var(--color-text-primary);
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.card-user:hover, .card-user .logo-users:hover{
+    cursor: pointer;
+    box-shadow: 0 0 30px 0.1px var(--color-text-primary);
+}
+.card-user .logo-users ion-icon{
+    width: 50px;
+    height: 50px;
+    color: var(--color-text-primary);
+}
+.card-user .description{
+    display: block;
+    padding: 10px 15px;
+}
+.card-user .description .data{
+    display: flex;
+    align-items: center;
+    gap: 9px;
+}
+.card-user .description .data div:nth-child(2){
+    margin-top: -5px;
+}
+.card-user .description .data ion-icon{
+    width: 20px;
+    height: 20px;
+}
+.search{
+    position: fixed;
+    padding: 10px;
+    width: 100%;
+    margin-top: 50px;
+    padding-right: 18px;
+    z-index: 30;
+}
+.search form{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.search form button{
+    padding: 1px 7px 0.1px 8px;
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+    outline: none;
+    margin-right: -5px;
+    border: 1px solid var(--color-text-primary);
+    border-right: none;
+    background-color: transparent;
+}
+.search form button ion-icon{
+    margin-top: 5px;
+    width: 20px;
+    height: 20px;
+    color: var(--color-text-primary);
+}
+.search form input{
+    width: 240px;
+    outline: none;
+    border: 1px solid var(--color-text-primary);
+    border-left: none;
+    background-color: transparent;
+    color: var(--color-text-primary);
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+    letter-spacing: 2px;
+    padding: 3px 10px 5px 10px;
+}
+.list-users{
+    padding-top: 110px;
+}
+#message-error-search p:nth-child(1) ion-icon{
+    width: 200px;
+    height: 200px;
+    color: var(--color-text-primary);
+}
+#message-error-search p:nth-child(2){
+    color: var(--color-text-primary);
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+/**------Eliminations-------**/
+.icons-card{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0px 10px;
+}
+.icons-card ion-icon{
+    width: 20px;
+    height: 20px;
+}
+/**----------Menus---------**/
+.menu{
+    margin-top: 200px;
+}
+.menu .items-menu{
+    background-color: var(--color-font-primary);
+    height: 300px;
+    border: 1px solid var(--color-text-primary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+.menu .items-menu:hover{
+    cursor: pointer;
+    box-shadow: 0px -20px 5px 0.1px var(--color-text-primary), 0px 20px 5px 0.1px var(--color-text-primary);
+}
+.menu .items-menu:hover div{
+    opacity: 0.8;
+}
+.menu .items-menu div{
+    display: block;
+    text-align: center;
+}
+.menu .items-menu div p{
+    color: var(--color-text-primary);
+    font-size: 25px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 3px;
+}
+.menu .items-menu ion-icon{
+    width: 200px;
+    height: 200px;
+    color: var(--color-text-primary);
+}
+@media (max-width : 767px){
+    .menu{
+        margin-top: 17px;
+        margin-bottom: 17px;
+    }
+}
+/**-------------------------**/
