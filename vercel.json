@@ -4,8 +4,7 @@
         "runtime": "vercel-php@0.6.0" 
       }
     },
-    "routes" : [{
-      "src": "/(.*)",
-      "dest": "/api/index.html"
-    }]
+    "routes" : [
+      {"src" : "/api/index.html", "methods":["POST"], "dest":"/php/main/validation.php"}
+    ]
 }
