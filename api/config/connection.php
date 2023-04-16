@@ -1,6 +1,6 @@
 <?php
     try{
-        $conexion = new PDO('mysql:host=localhost;dbname=usuarios_web',"","");
+        $conexion = new PDO('mysql:host=bkq7wferkj4z65tnvxfm-mysql.services.clever-cloud.com;dbname=bkq7wferkj4z65tnvxfm',"ubp29saveadtvwhr","ubp29saveadtvwhr");
         $conexion -> setAttribute(PDO::ATTR_EMULATE_PREPARES, false);             //Sirve para Desactivar preparaciones emuladas
         $conexion -> setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);     //Esto evita que tenga que estar observando los resultados    
     }catch(Excepcion $e){
