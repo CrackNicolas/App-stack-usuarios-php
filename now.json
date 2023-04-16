@@ -4,9 +4,9 @@
   "scope": "trainit",
   "builds": [
       { "src": "index.html", "use": "@now/static" },
-      { "src": "/src/php/main/validation.php", "use": "@now/php" }
+      { "src": "/src/php/main/*.php", "use": "@now/php" }
   ],
   "routes": [
-      { "src": "/api/(.*)", "dest": "/api/index.html" }
+      { "src": "/api/(.*)", "dest": "/api/$1" }
   ]
 }
