@@ -24,4 +24,3 @@
    .CSS3
    .DB MySql
    .md5
-   .DB Deploy con Clever Cloud
