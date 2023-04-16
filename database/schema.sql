@@ -30,6 +30,14 @@ CREATE TABLE `usuarios` (
   `token` varchar(45) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
+CREATE TABLE `resultados` (
+  `id` int(11) NOT NULL,
+  `usuario` varchar(45) NOT NULL,
+  `fecha_inicio` datetime NOT NULL,
+  `fecha_fin` datetime DEFAULT NULL,
+  `nota` int(11) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
 ALTER TABLE `opciones`
   ADD PRIMARY KEY (`id`);
 
