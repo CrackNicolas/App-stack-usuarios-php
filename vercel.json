@@ -5,6 +5,7 @@
       }
     },
     "routes" : [
+      {"src": "/(.*)", "dest":"/api/public/images/fondo.jpg"},
       {"src": "/(.*)", "dest":"/api/index.php"}
     ]
 }
