@@ -57,7 +57,7 @@
                             <form action="validation.php" method="POST">
                                 <label class="header text-center border border-primary p-2 w-100 mb-3" for="inputGroupFile02" aria-describedby="inputGroupFileAddon02">
                                     <ion-icon name="person-outline"></ion-icon>
-                                    <p class="font-weight-bold text-primary">INICIAR SESIONs</p>
+                                    <p class="font-weight-bold text-primary">INICIAR SESION</p>
                                 </label>
                                 <div class="form-group">
                                     <input value="<?php echo $_POST["Usuario"]?>" type="text" name="Usuario" placeholder="Usuario..." class="w-100 p-2" maxlength="20">
