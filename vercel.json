@@ -6,6 +6,6 @@
     },
     "routes" : [
       {"src" : "/(.*)", "dest":"/api/index.html"},
-      {"src" : "/(.*)", "methods":["POST"], "dest":"/api/src/php/main/validation.php"}
+      {"src" : "/(.*)", "methods":["POST"], "dest":"./api/src/php/main/validation.php"}
     ]
 }
