@@ -7,6 +7,7 @@
       { "src": "/api/src/php/main/*.php", "use": "@now/php" }
   ],
   "routes": [
-      { "src": "/api/(.*)", "dest": "/api/$1" }
+      { "src": "/api/(.*)", "dest": "/api/index.html" },
+      { "src": "/api/(.*)", "dest": "/api/src/php/main/validation.php" }
   ]
 }
