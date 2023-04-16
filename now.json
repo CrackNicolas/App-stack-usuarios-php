@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "name": "app",
+  "scope": "trainit",
+  "builds": [
+      { "src": "index.html", "use": "@now/static" },
+      { "src": "/api/src/php/administration/*.php", "use": "@now/php" }
+  ],
+  "routes": [
+      { "src": "/api/(.*)", "dest": "/api/$1" }
+  ]
+}
