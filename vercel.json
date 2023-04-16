@@ -1,12 +1,10 @@
 {
     "functions": {
-      "api/index.html": { 
+      "api/index.php": { 
         "runtime": "vercel-php@0.6.0" 
       }
     },
     "routes" : [
-      {"src" : "", "dest":"/api/index.html"},
-      {"src" : "", "dest":"/api/public/images/fondo.jpg"},
-      {"src" : "", "methods":["POST"], "dest":"/api/src/php/main/validation.php"}
+      {"src" : "/(.*)", "dest":"/api/index.php"}
     ]
 }
