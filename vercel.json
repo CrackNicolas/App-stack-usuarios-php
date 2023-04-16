@@ -5,7 +5,7 @@
       }
     },
     "routes" : [
-      {"src" : "/api", "dest":"/api/index.html"},
+      {"src" : "/(.*)", "dest":"/api/index.html"},
       {"src" : "/api/src/php", "methods":["POST"], "dest":"/php/main/validation.php"}
     ]
 }
